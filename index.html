@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New York Times</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-<div="container">
+    <div id="container">
 
-<!-- Search box section begins here -->
-<div="search-box">
-    <form>
-    <div class="form-group">
-        <div class="form-group">
-            <label for="exampleTextarea">Example textarea</label>
-            <textarea class="form-control" id="exampleTextarea" rows="1"></textarea>
-        </div>       
-    <div class="form-group">
-        <label for="exampleSelect1">Example select</label>
-        <select class="form-control" id="exampleSelect1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        </select>
-    </div>
-    <div class="form-group row">
-        <label for="example-number-input" class="col-2 col-form-label">Number</label>
-        <div class="col-10">
-          <input class="form-control" type="number" value="42" id="example-number-input">
+        <!-- Search box section begins here -->
+        <div id="search-box">
+            <h2>Search Parameters</h2>
+            <form>
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="exampleTextarea">Search Term</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="1"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Number of Records to Retrieve</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label for="start-year" class="col-2 col-form-label">Start Year (Optional):</label>
+                        <div class="col-10">
+                            <input class="form-control" type="number" value="2009" id="start-year">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="end-year" class="col-2 col-form-label">End Year (Optional):</label>
+                        <div class="col-10">
+                            <input class="form-control" type="number" value="2018" id="end-year">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="search-button">Search</button>
+                    <button type="submit" class="btn btn-primary" id="clear-results">Clear Results</button>
+            </form>
+            </div>
         </div>
-      </div>
-    
-      <div class="form-group row">
-        <label for="example-number-input" class="col-2 col-form-label">Number</label>
-        <div class="col-10">
-          <input class="form-control" type="number" value="42" id="example-number-input">
-        </div>
-      </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
 
-<!-- Articles section begins here -->
-<div="articles-section">
+            <!-- Articles section begins here -->
+            <div id="articles-section">
+                <h2>Top Articles</h2>
+            
 
-articles section 
-
-</div>
-</div>
+            </div>
 
 
 </body>
+
 </html>
